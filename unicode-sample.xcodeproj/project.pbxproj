@@ -16,6 +16,9 @@
 		F413440928E097550045A079 /* unicode_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413440828E097550045A079 /* unicode_sampleTests.swift */; };
 		F413441328E097550045A079 /* unicode_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413441228E097550045A079 /* unicode_sampleUITests.swift */; };
 		F413441528E097550045A079 /* unicode_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413441428E097550045A079 /* unicode_sampleUITestsLaunchTests.swift */; };
+		F413442528E099240045A079 /* UnicodeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413442428E099240045A079 /* UnicodeSampleViewModel.swift */; };
+		F413442728E099920045A079 /* UnicodeSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413442628E099920045A079 /* UnicodeSampleView.swift */; };
+		F413442928E099CC0045A079 /* SubstringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413442828E099CC0045A079 /* SubstringView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		F413440E28E097550045A079 /* unicode-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "unicode-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F413441228E097550045A079 /* unicode_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unicode_sampleUITests.swift; sourceTree = "<group>"; };
 		F413441428E097550045A079 /* unicode_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unicode_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F413442428E099240045A079 /* UnicodeSampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeSampleViewModel.swift; sourceTree = "<group>"; };
+		F413442628E099920045A079 /* UnicodeSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeSampleView.swift; sourceTree = "<group>"; };
+		F413442828E099CC0045A079 /* SubstringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 			children = (
 				F41343F228E0974E0045A079 /* unicode_sampleApp.swift */,
 				F41343F428E0974F0045A079 /* ContentView.swift */,
+				F413442128E0987C0045A079 /* Presentation */,
 				F41343F628E097540045A079 /* Assets.xcassets */,
 				F41343FB28E097540045A079 /* Persistence.swift */,
 				F41343FD28E097550045A079 /* unicode_sample.xcdatamodeld */,
@@ -131,6 +138,32 @@
 				F413441428E097550045A079 /* unicode_sampleUITestsLaunchTests.swift */,
 			);
 			path = "unicode-sampleUITests";
+			sourceTree = "<group>";
+		};
+		F413442128E0987C0045A079 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F413442228E098BB0045A079 /* ViewModels */,
+				F413442328E098CA0045A079 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F413442228E098BB0045A079 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F413442428E099240045A079 /* UnicodeSampleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F413442328E098CA0045A079 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F413442628E099920045A079 /* UnicodeSampleView.swift */,
+				F413442828E099CC0045A079 /* SubstringView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F413442728E099920045A079 /* UnicodeSampleView.swift in Sources */,
 				F41343FC28E097540045A079 /* Persistence.swift in Sources */,
+				F413442928E099CC0045A079 /* SubstringView.swift in Sources */,
 				F41343F528E0974F0045A079 /* ContentView.swift in Sources */,
 				F41343F328E0974E0045A079 /* unicode_sampleApp.swift in Sources */,
+				F413442528E099240045A079 /* UnicodeSampleViewModel.swift in Sources */,
 				F41343FF28E097550045A079 /* unicode_sample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
